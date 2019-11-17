@@ -1,0 +1,167 @@
+@import "reset";
+@import "wedding";
+@import "services";
+@import "offer";
+@import "icons";
+@import "mixins";
+
+body {
+  @include montserrat;
+  background: #ffffff;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 93.9%;
+  margin: 80px 0 20px 4%;
+}
+
+h3 {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 93.9%;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 153.4%;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.paragraph__text {
+  margin: 0 0 35px 4%;
+}
+
+.navbar {
+  @include inline-center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: auto;
+  padding: 12px 0;
+
+  &__links {
+    @include inline-center;
+    color: #000000;
+    margin-left: 24%;
+  }
+
+  &__item {
+    margin-right: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__brand {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 93.9%;
+    margin-left: 80px;
+  }
+}
+
+%btn {
+  @include montserrat;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 153.4%;
+  background-color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.btn__small {
+  @extend %btn;
+  border: 2px solid #000000;
+  padding: 5px 33px;
+}
+
+.btn__rose {
+  @extend %btn;
+  border: 2px solid #FF699F;
+  padding: 11px 40px;
+  color: #FF699F;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1F1F1F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px 0;
+
+  &__label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 93.9%;
+    margin-left: 35px;
+  }
+}
+
+.slick-slider {
+  display: none !important;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 93.9%;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar {
+
+    &__brand {
+      font-size: 18px;
+      line-height: 93.9%;
+      margin: 12px 0 10px 20px;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
+  .icon-hamburger:before {
+    display: block;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .btn__rose {
+    margin-top: 20px;
+  }
+  .slick-slider {
+    display: block !important;
+  }
+}

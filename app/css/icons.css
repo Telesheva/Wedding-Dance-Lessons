@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?hj38s4");
+  src: url("../fonts/icomoon.eot?hj38s4#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?hj38s4") format("truetype"), url("../fonts/icomoon.woff?hj38s4") format("woff"), url("../fonts/icomoon.svg?hj38s4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon', serif !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 100px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-hamburger:before {
+  content: "\e908";
+  display: none; }
+
+.icon-coffee:before {
+  content: "\e900";
+  color: #ff699f; }
+
+.icon-door:before {
+  content: "\e901";
+  color: #ff699f; }
+
+.icon-laugh:before {
+  content: "\e902";
+  color: #ff699f; }
+
+.icon-people:before {
+  content: "\e903";
+  color: #ff699f; }
+
+.icon-pictures:before {
+  content: "\e904";
+  color: #ff699f; }
+
+.icon-shape:before {
+  content: "\e905";
+  color: #ff699f; }
+
+.icon-smile:before {
+  content: "\e906";
+  color: #ff699f; }
+
+.icon-star:before {
+  content: "\e907";
+  color: #ff699f; }
