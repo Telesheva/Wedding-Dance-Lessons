@@ -50,7 +50,3 @@
     font-size: 13px;
     line-height: 153.4%;
     padding: 5px 0 25px 20px; } }
-
-@media only screen and (device-width: 320px) {
-  .services__item {
-    padding-right: 25px; } }
