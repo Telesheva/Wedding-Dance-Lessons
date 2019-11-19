@@ -103,11 +103,6 @@ p {
   }
 }
 
-#close {
-  width: 10px;
-  height: 10px;
-}
-
 %btn {
   @include montserrat;
   box-sizing: border-box;

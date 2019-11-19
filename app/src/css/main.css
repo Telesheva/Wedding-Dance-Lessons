@@ -608,10 +608,6 @@ p {
     line-height: 21px;
     margin: 20px 0 15px 20px; }
 
-#close {
-  width: 10px;
-  height: 10px; }
-
 .btn__small, .btn__rose {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
