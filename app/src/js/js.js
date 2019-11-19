@@ -2,8 +2,8 @@ $(document).ready(() => {
     $('.sl').slick({
         dots: true,
         arrows: false,
-        centerMode: true,
-        centerPadding: '20px'
+        variableWidth: true,
+
     })
 });
 

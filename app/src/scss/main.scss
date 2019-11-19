@@ -222,6 +222,10 @@ p {
     margin: 0;
   }
 
+  .slide {
+    padding-right: 15px;
+  }
+
   .footer {
     flex-direction: column;
     align-items: flex-start;
@@ -233,10 +237,4 @@ p {
   }
 }
 
-@media only screen and (device-width: 375px) {
-  .sl__slide {
-    width: 310px !important;
-    margin: 0 30px 0 -20px;
-  }
-}
 
