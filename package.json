@@ -11,11 +11,11 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
-    "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1"
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0"
   }
 }

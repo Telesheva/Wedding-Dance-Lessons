@@ -1,0 +1,26 @@
+.offer {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%; }
+  .offer__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px; }
+    .offer__list__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 7% 3% 4%;
+      text-align: center;
+      width: 13%;
+      height: 111px; }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .icon__text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 153.4%; }
+  .offer__list__item {
+    width: 45%;
+    margin: 0;
+    padding: 0 10px 20px 0; } }

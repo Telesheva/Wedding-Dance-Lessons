@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Wedding Dance</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-    <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header>
-    <div class="container">
+<div class="container">
+    <header>
         <nav class="navbar">
             <p class="navbar__brand">Wedding Dance</p>
             <ul class="navbar__links">
@@ -29,12 +27,25 @@
                     </button>
                 </li>
             </ul>
-            <span class="icon-hamburger"></span>
+            <i class="icon icon-hamburger" id="hamburger"></i>
         </nav>
-    </div>
-</header>
-<main>
-    <div class="container">
+        <div class="dropdown" id="dropdown">
+            <ul class="dropdown__links" id="dropdown-links">
+                <li class="dropdown__item">Homework</li>
+                <li class="dropdown__item">Services</li>
+                <li class="dropdown__item">Our Coaches</li>
+                <li class="dropdown__item">Testimonials</li>
+                <li class="dropdown__item">FAQ</li>
+                <li class="dropdown__item">Lesson Review</li>
+                <li class="dropdown__item">
+                    <button class="btn btn__small">
+                        Start
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
         <section class="wedding">
             <div class="wedding__description">
                 <h1 class="wedding__headline">Wedding Dance Lessons</h1>
@@ -47,119 +58,119 @@
             </div>
             <div class="wedding__photo"></div>
         </section>
-        <section class="services">
-            <h2>Our services</h2>
-            <p class="paragraph__text">We want to make your wedding day perfect that is why suggest a lot of options for
-                <br/>
-                dance: not only for a bride and groom but for their friends and relatives</p>
-            <ul class="services__list">
-                <li class="services__item">
-                    <div class="services__photo1"></div>
-                    <h3>For Bride and Groom</h3>
-                    <ul class="services__item__desc">
-                        <li>First Dance</li>
-                        <li>Parent & Child Dance</li>
-                    </ul>
-                </li>
-                <li class="services__item">
-                    <div class="services__photo2"></div>
-                    <h3>For Guests</h3>
-                    <ul class="services__item__desc">
-                        <li>Groomsmen Dance</li>
-                        <li>Parent Dance</li>
-                        <li>Children's Dance</li>
-                    </ul>
-                </li>
-                <li class="services__item">
-                    <div class="services__photo3"></div>
-                    <h3>Other events</h3>
-                    <ul class="services__item__desc">
-                        <li>Bridal Party Dance</li>
-                        <li>Anniversary Dance</li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="sl" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-                <div class="sl__slide">
-                    <div class="services__item">
+        <div class="wrapper">
+            <section class="services">
+                <h2>Our services</h2>
+                <p class="paragraph__text">We want to make your wedding day perfect that is why suggest a lot of options
+                    for
+                    dance: not only for a bride and groom but for their friends and relatives</p>
+                <ul class="services__list">
+                    <li class="services__item">
                         <div class="services__photo1"></div>
                         <h3>For Bride and Groom</h3>
                         <ul class="services__item__desc">
                             <li>First Dance</li>
                             <li>Parent & Child Dance</li>
                         </ul>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__photo2"></div>
+                        <h3>For Guests</h3>
+                        <ul class="services__item__desc">
+                            <li>Groomsmen Dance</li>
+                            <li>Parent Dance</li>
+                            <li>Children's Dance</li>
+                        </ul>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__photo3"></div>
+                        <h3>Other events</h3>
+                        <ul class="services__item__desc">
+                            <li>Bridal Party Dance</li>
+                            <li>Anniversary Dance</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sl" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                    <div class="sl__slide">
+                        <div class="services__item">
+                            <div class="services__photo1"></div>
+                            <h3>For Bride and Groom</h3>
+                            <ul class="services__item__desc">
+                                <li>First Dance</li>
+                                <li>Parent & Child Dance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl__slide">
+                        <div class="services__item">
+                            <div class="services__photo2"></div>
+                            <h3>For Guests</h3>
+                            <ul class="services__item__desc">
+                                <li>Groomsmen Dance</li>
+                                <li>Parent Dance</li>
+                                <li>Children's Dance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl__slide">
+                        <div class="services__item">
+                            <div class="services__photo3"></div>
+                            <h3>Other events</h3>
+                            <ul class="services__item__desc">
+                                <li>Bridal Party Dance</li>
+                                <li>Anniversary Dance</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="sl__slide">
-                    <div class="services__item">
-                    <div class="services__photo2"></div>
-                    <h3>For Guests</h3>
-                    <ul class="services__item__desc">
-                        <li>Groomsmen Dance</li>
-                        <li>Parent Dance</li>
-                        <li>Children's Dance</li>
-                    </ul>
-                    </div>
-                </div>
-                <div class="sl__slide">
-                    <div class="services__item">
-                    <div class="services__photo3"></div>
-                    <h3>Other events</h3>
-                    <ul class="services__item__desc">
-                        <li>Bridal Party Dance</li>
-                        <li>Anniversary Dance</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="offer">
-            <h2>What we offer</h2>
-            <p class="paragraph__text">Our goal is not only to teach you how to dance but also give the best
-                unforgettable <br/>
-                memories about preparing to your event</p>
-            <ul class="offer__list">
-                <li class="offer__list__item">
-                    <span class="icon-people"></span>
-                    <p>Talented Coaches</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-door"></span>
-                    <p>Cozy rooms for training</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-coffee"></span>
-                    <p>Coffee, tea and cookies</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-shape"></span>
-                    <p>Good physical form</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-star"></span>
-                    <p>Self Confidence and <br/>
-                        success on your event</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-laugh"></span>
-                    <p>Exciting emotions <br/>
-                        and a lot of fun</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-pictures"></span>
-                    <p>Great photos <br/>
-                        from your event</p>
-                </li>
-                <li class="offer__list__item">
-                    <span class="icon-smile"></span>
-                    <p>Spend hours together <br/>
-                        in happiness</p>
-                </li>
-            </ul>
-        </section>
-    </div>
-</main>
-<div class="container">
+            </section>
+            <section class="offer">
+                <h2>What we offer</h2>
+                <p class="paragraph__text">Our goal is not only to teach you how to dance but also give the best
+                    unforgettable
+                    memories about preparing to your event</p>
+                <ul class="offer__list">
+                    <li class="offer__list__item">
+                        <i class="icon icon-people"></i>
+                        <p class="icon__text">Talented Coaches</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-door"></i>
+                        <p class="icon__text">Cozy rooms for training</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-coffee"></i>
+                        <p class="icon__text">Coffee, tea and cookies</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-shape"></i>
+                        <p style="padding-top: 5px" class="icon__text">Good physical form</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-star"></i>
+                        <p style="padding-top: 15px" class="icon__text">Self Confidence and <br/>
+                            success on your event</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-laugh"></i>
+                        <p class="icon__text" style="padding-top: 5px" >Exciting emotions <br/>
+                            and a lot of fun</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-pictures"></i>
+                        <p style="padding-top: 11px" class="icon__text">Great photos from<br/>
+                             your event</p>
+                    </li>
+                    <li class="offer__list__item">
+                        <i class="icon icon-smile"></i>
+                        <p style="padding-top: 10px" class="icon__text">Spend hours together <br/>
+                            in happiness</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
     <footer class="footer">
         <p class="footer__label">Wedding Dance</p>
         <p>Copyright © 2019</p>
@@ -168,15 +179,6 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(() => {
-        $('.sl').slick({
-            dots: true,
-            arrows: false,
-            centerMode: true,
-            centerPadding: '20px'
-        })
-    });
-</script>
+<script type="text/javascript" src="src/js/js.js"></script>
 </body>
 </html>

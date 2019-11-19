@@ -1,5 +1,8 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+const gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    iconfont = require('gulp-iconfont'),
+    iconfontCss = require('gulp-iconfont-css');
 const { series, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
 
@@ -14,16 +17,47 @@ function browserSyncing(done) {
 }
 
 function scss() {
-    return gulp.src("app/scss/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("app/css"))
+    return gulp.src("app/src/scss/*.scss")
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest("app/src/css"))
         .pipe(browserSync.stream());
 }
 
 function watchFiles() {
-    gulp.watch("app/scss/*.scss", scss);
+    gulp.watch("app/src/scss/*.scss", scss);
     gulp.watch("app/index.html", browserSyncing);
 }
 
 const watch = parallel(watchFiles, browserSyncing);
 exports.watch = watch;
+exports.scss = scss;
+
+// icon fonts
+const
+    fontName = 'icons';
+
+// add svg icons to the folder "icons" and use 'iconfont' task for generating icon font
+async function iconFonts() {
+    gulp.src('app/src/assets/icons/*.svg')
+        .pipe(iconfontCss({
+            // где будет наш scss файл
+            targetPath: '../../scss/icons.scss',
+            // пути подлючения шрифтов в icons.scss
+            fontPath: '../../src/assets/fonts/',
+            fontName: fontName
+
+        }))
+        .pipe(iconfont({
+            fontName: fontName,
+            formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
+            normalize: true,
+            fontHeight: 1001
+        }))
+        .pipe(gulp.dest('app/src/assets/fonts'))
+}
+
+exports.iconFonts = iconFonts;

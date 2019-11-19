@@ -1,9 +1,9 @@
 @import "reset";
+@import "icons";
+@import "mixins";
 @import "wedding";
 @import "services";
 @import "offer";
-@import "icons";
-@import "mixins";
 
 body {
   @include montserrat;
@@ -14,11 +14,11 @@ h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 93.9%;
-  margin: 80px 0 20px 4%;
+  margin: 80px 0 20px 0;
 }
 
 h3 {
-  padding-left: 20px;
+  padding: 35px 0 10px 20px;
   font-weight: bold;
   font-size: 24px;
   line-height: 93.9%;
@@ -35,8 +35,18 @@ p {
   margin: 0 auto;
 }
 
+.wrapper {
+  padding-left: 4%;
+}
+
 .paragraph__text {
-  margin: 0 0 35px 4%;
+  margin: 0 0 35px 0;
+  width: 48%;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 13px;
+    line-height: 153.4%;
+    width: 85%;
+  }
 }
 
 .navbar {
@@ -76,6 +86,28 @@ p {
   }
 }
 
+.dropdown {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 9%;
+  padding-bottom: 20px;
+  &__item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 20px 0 15px 20px;
+  }
+}
+
+#close {
+  width: 10px;
+  height: 10px;
+}
+
 %btn {
   @include montserrat;
   box-sizing: border-box;
@@ -113,7 +145,7 @@ p {
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  padding: 10px 0;
+  padding: 25px 0;
 
   &__label {
     font-style: normal;
@@ -121,6 +153,10 @@ p {
     font-size: 18px;
     line-height: 93.9%;
     margin-left: 35px;
+  }
+
+  p {
+    margin-right: 35px;
   }
 }
 
@@ -142,13 +178,11 @@ p {
     width: 100%;
   }
   .navbar {
-
     &__brand {
       font-size: 18px;
       line-height: 93.9%;
       margin: 12px 0 10px 20px;
     }
-
     &__links {
       display: none;
     }
@@ -161,7 +195,58 @@ p {
   .btn__rose {
     margin-top: 20px;
   }
+  .btn__small {
+    margin-top: 15px;
+    padding: 6px 43px;
+  }
   .slick-slider {
     display: block !important;
+  }
+  .slick-dots li.slick-active button:before {
+    background-color: #FF699F !important;
+    border: none;
+    width: 8px !important;
+    height: 8px !important;
+  }
+  .slick-dots li button:before {
+    content: "" !important;
+    border-radius: 50%;
+    width: 7px !important;
+    height: 7px !important;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+  }
+  .slick-dots li button:hover:before, .slick-dots li button:focus {
+    opacity: 5;
+  }
+  .slick-track {
+    margin-bottom: 25px;
+  }
+  .slick-dots li {
+    width: 4px !important;
+    margin: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+
+    p {
+      margin: 15px 0 5px 35px;
+    }
+  }
+}
+
+@media only screen and (device-width: 375px) {
+  .sl__slide {
+    width: 310px !important;
+  }
+}
+
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+  .sl__slide {
+    width: 347px !important;
   }
 }
