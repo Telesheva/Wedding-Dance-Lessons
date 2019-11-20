@@ -9,12 +9,13 @@
 }
 
 .icon:before {
-	font-family: "icons", serif;
+  font-family: "icons", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
   text-decoration: none;
   text-transform: none;
   font-size: 85px;
@@ -77,17 +78,17 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-	.icon:before {
-		font-size: 60px;
-	}
-	.icon-shape:before {
-		font-size: 55px;
-	}
-	.icon-pictures:before, .icon-star:before, .icon-smile:before {
-		font-size: 50px;
-	}
-	.icon-close:before {
-		font-size: 25px;
-		margin-right: 15px;
-	}
+  .icon:before {
+    font-size: 60px;
+  }
+  .icon-shape:before {
+    font-size: 55px;
+  }
+  .icon-pictures:before, .icon-star:before, .icon-smile:before {
+    font-size: 50px;
+  }
+  .icon-close:before {
+    font-size: 25px;
+    margin-right: 15px;
+  }
 }

@@ -3,7 +3,7 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     iconfont = require('gulp-iconfont'),
     iconfontCss = require('gulp-iconfont-css');
-const { series, parallel } = require('gulp');
+const { parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
 
 function browserSyncing(done) {
@@ -36,11 +36,10 @@ const watch = parallel(watchFiles, browserSyncing);
 exports.watch = watch;
 exports.scss = scss;
 
-// icon fonts
+
 const
     fontName = 'icons';
 
-// add svg icons to the folder "icons" and use 'iconfont' task for generating icon font
 async function iconFonts() {
     gulp.src('app/src/assets/icons/*.svg')
         .pipe(iconfontCss({
