@@ -8,7 +8,6 @@ $(document).ready(() => {
 
 const dropdown = document.querySelector('#dropdown');
 const hamburger = document.querySelector('#hamburger');
-const headlines = document.getElementsByTagName('h2');
 
 hamburger.addEventListener('click', () => {
     if (hamburger.classList.contains('icon-hamburger')) {
@@ -22,18 +21,5 @@ hamburger.addEventListener('click', () => {
     }
 });
 
-/*
-if (window.innerWidth < 480 && window.innerWidth > 320) {
-    Array.from(headlines).forEach(h2 => {
-        h2.classList.add('wow');
-        h2.classList.add('zoomIn');
-    })
-} else {
-    Array.from(headlines).forEach(h2 => {
-        h2.classList.remove('wow');
-        h2.classList.remove('zoomIn');
-    })
-}
-*/
 
 
