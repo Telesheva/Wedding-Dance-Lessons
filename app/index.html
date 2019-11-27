@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -49,11 +50,13 @@
         <section class="wedding">
             <div class="wedding__description">
                 <h1 class="wedding__headline">Wedding Dance Lessons</h1>
-                <h4>New Jersey</h4>
-                <p> The wedding dance is one of the most important dances in your life.
-                    You look perfect and the whole audience is looking at you.
-                    Also, it becomes the favorite moment you like to play on videos and photos.
-                    Feel the moment</p>
+                <div class="wedding__text">
+                    <h4>New Jersey</h4>
+                    <p> The wedding dance is one of the most important dances in your life.
+                        You look perfect and the whole audience is looking at you.
+                        Also, it becomes the favorite moment you like to play on videos and photos.
+                        Feel the moment</p>
+                </div>
                 <button class="btn btn__rose">Let's start</button>
             </div>
             <div class="wedding__photo"></div>
@@ -93,7 +96,6 @@
                 </ul>
                 <div class="sl" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                     <div class="sl__slide">
-                        <div class="slide">
                         <div class="services__item">
                             <div class="services__photo1"></div>
                             <h3>For Bride and Groom</h3>
@@ -102,10 +104,8 @@
                                 <li>Parent & Child Dance</li>
                             </ul>
                         </div>
-                        </div>
                     </div>
                     <div class="sl__slide">
-                        <div class="slide">
                         <div class="services__item">
                             <div class="services__photo2"></div>
                             <h3>For Guests</h3>
@@ -115,10 +115,8 @@
                                 <li>Children's Dance</li>
                             </ul>
                         </div>
-                        </div>
                     </div>
                     <div class="sl__slide">
-                        <div class="slide">
                         <div class="services__item">
                             <div class="services__photo3"></div>
                             <h3>Other events</h3>
@@ -126,7 +124,6 @@
                                 <li>Bridal Party Dance</li>
                                 <li>Anniversary Dance</li>
                             </ul>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -137,38 +134,38 @@
                     unforgettable
                     memories about preparing to your event</p>
                 <ul class="offer__list">
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInDown" data-wow-duration="1s">
                         <i class="icon icon-people"></i>
                         <p class="icon__text">Talented Coaches</p>
                     </li>
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInUp">
                         <i class="icon icon-door"></i>
                         <p class="icon__text">Cozy rooms for training</p>
                     </li>
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInDown">
                         <i class="icon icon-coffee"></i>
                         <p class="icon__text">Coffee, tea and cookies</p>
                     </li>
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInUp">
                         <i class="icon icon-shape"></i>
                         <p style="padding-top: 5px" class="icon__text">Good physical form</p>
                     </li>
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInDown">
                         <i class="icon icon-star"></i>
                         <p style="padding-top: 15px" class="icon__text">Self Confidence and <br/>
                             success on your event</p>
                     </li>
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInUp">
                         <i class="icon icon-laugh"></i>
                         <p class="icon__text" style="padding-top: 5px" >Exciting emotions <br/>
                             and a lot of fun</p>
                     </li>
                     <li class="offer__list__item">
-                        <i class="icon icon-pictures"></i>
+                        <i class="icon icon-pictures wow fadeInDown"></i>
                         <p style="padding-top: 11px" class="icon__text">Great photos from<br/>
                              your event</p>
                     </li>
-                    <li class="offer__list__item">
+                    <li class="offer__list__item wow fadeInUp">
                         <i class="icon icon-smile"></i>
                         <p style="padding-top: 10px" class="icon__text">Spend hours together <br/>
                             in happiness</p>
@@ -186,5 +183,11 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="src/js/js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js"></script>
+<script>
+    new WOW({
+        mobile: false
+    }).init();
+</script>
 </body>
 </html>
