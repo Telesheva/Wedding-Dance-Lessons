@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  padding: 35px 0 10px 20px;
+ /* padding: 35px 0 10px 20px;*/
   font-weight: bold;
   font-size: 24px;
   line-height: 93.9%;
@@ -130,6 +130,10 @@ p {
   @extend %btn;
   border: 2px solid #000000;
   padding: 5px 33px;
+  &:hover {
+    border: 2px solid #FF699F;
+    color: #ff699f;
+  }
 }
 
 .btn__rose {
@@ -137,6 +141,9 @@ p {
   border: 2px solid #FF699F;
   padding: 11px 40px;
   color: #FF699F;
+  &:hover {
+    color: #000000;
+  }
 }
 
 .footer {

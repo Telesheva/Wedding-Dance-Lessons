@@ -5,15 +5,13 @@
   &__list {
     display: inline-flex;
     flex-wrap: wrap;
-    padding-bottom: 40px;
     &__item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 3% 6% 3% 4%;
       text-align: center;
-      width: 14%;
-      height: 111px;
+      width: calc(100% / 4);
+      margin: 15px 0 60px -15px;
     }
   }
 }
@@ -25,8 +23,7 @@
     line-height: 153.4%;
   }
   .offer__list__item {
-    width: 45%;
-    margin: 0;
-    padding: 0 10px 20px 0;
+    width: calc(100% / 2);
+    margin: 0 0 30px -10px;
   }
 }

@@ -44,8 +44,8 @@ async function iconFonts() {
     gulp.src('app/src/assets/icons/*.svg')
         .pipe(iconfontCss({
             // где будет наш scss файл
-            targetPath: '../../scss/icons.scss',
-            // пути подлючения шрифтов в icons.scss
+            targetPath: '../../scss/_icons.scss',
+            // пути подлючения шрифтов в _icons.scss
             fontPath: '../../src/assets/fonts/',
             fontName: fontName
 
